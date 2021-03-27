@@ -1,1 +1,54 @@
-/* Denna fil skall innehålla din CSS kod */
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.delsida1{
+background-color: #536162;
+font-family: "Lucida Console", "Courier New", monospace;
+grid-area: d1;
+}
+.delsida2{
+    background-color: #536162;
+    font-family: "Lucida Console", "Courier New", monospace;
+    grid-area: d2;
+    }
+    .delsida3{
+        background-color: #536162;
+        font-family: "Lucida Console", "Courier New", monospace;
+        grid-area: d3;
+        }
+        .delsida4{
+            background-color: #536162;
+            font-family: "Lucida Console", "Courier New", monospace;
+            grid-area: d4;
+            }
+           
+.logga{
+    grid-area: m;
+}
+.logga>img{
+    object-fit: cover;
+    width: 100%; 
+}
+
+a{
+    /*display: flex;*/
+    color: #f4c983;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.gridwrapper{
+display: grid;
+grid-template-areas: 
+"m m m m"
+"d1 d1 d2 d2"
+"d1 d1 d2 d2"
+"d3 d3 d4 d4"
+"d3 d3 d4 d4"
+;
+}
+
