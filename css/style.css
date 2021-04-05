@@ -8,47 +8,63 @@
 .delsida1{
 background-color: #536162;
 font-family: "Lucida Console", "Courier New", monospace;
-grid-area: d1;
+text-align: center;
+flex: 1;
+width: 80vw;
+height: 50vh;
 }
 .delsida2{
     background-color: #536162;
     font-family: "Lucida Console", "Courier New", monospace;
-    grid-area: d2;
+    text-align: center;
+    flex: 1;
+    width: 88vw;
+    height: 50vh;
     }
     .delsida3{
         background-color: #536162;
         font-family: "Lucida Console", "Courier New", monospace;
-        grid-area: d3;
+        text-align: center;
+        flex: 1;
+        width: 98vw;
+        height: 50vh;
         }
         .delsida4{
             background-color: #536162;
             font-family: "Lucida Console", "Courier New", monospace;
-            grid-area: d4;
+            text-align: center;
+            flex: 1;
+            width: 90vw;
+            height: 50vh;
             }
            
-.logga{
-    grid-area: m;
-}
+
 .logga>img{
+    display: flex;
     object-fit: cover;
-    width: 100%; 
+    width: 100%;
+    height: 30vh;
+}
+img{
+    width: 100%;
+    height: 50vh;
+
 }
 
+
 a{
-    /*display: flex;*/
     color: #f4c983;
     text-decoration: none;
     font-size: 25px;
 }
 
-.gridwrapper{
-display: grid;
-grid-template-areas: 
-"m m m m"
-"d1 d1 d2 d2"
-"d1 d1 d2 d2"
-"d3 d3 d4 d4"
-"d3 d3 d4 d4"
-;
-}
 
+
+@media screen and (min-width: 100px){
+ .container{
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+  align-items: center;
+  }
+}
